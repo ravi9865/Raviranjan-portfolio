@@ -84,6 +84,7 @@ article {
 }
 
 .bac-mode img {
+    border: 2px solid rgb(87, 75, 75);
     width: 70px;
     height: 40px;
     border-radius: 9px;
@@ -186,8 +187,9 @@ article {
 }
 
 #gmail {
-    width: 45px;
-    height: 45px;
+    width: 35px;
+height: 35px;
+border: 2px solid rgb(196, 188, 188);
 }
 
 /* Main Contents */
@@ -235,7 +237,7 @@ article {
 
 .card {
     width: 300px;
-    height: 300px;
+    height: 274px;
     background-color: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -304,11 +306,7 @@ table {
     border: none;
     outline: none;
     font-size: 1.2rem;
-
-}
-
-th {
-    padding: 0.5rem;
+    width: 100%;
 }
 
 td {

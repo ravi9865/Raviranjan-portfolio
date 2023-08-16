@@ -10,10 +10,14 @@ import Img8 from "../Assets/Img/link_page/linkedin_logo.png";
 import Img9 from "../Assets/Img/link_page/HackerRank_logo.png";
 import Img10 from "../Assets/Img/link_page/Devsnest_logo.png";
 import Img14 from "../Assets/Img/contactus-icon.png";
-export default function Content() {
+export default function Content(props) {
+    const handleSubmit = (e)=>{ 
+        e.preventDefault();
+        e.target.value="";
+    }
     return (
-        <article class="content">
-            <div class="same-content-text about-text">
+        <article className="content" style={{ backgroundColor: props.active ? "black" : "white", color: props.active ? "white" : "black" }}>
+            <div className="same-content-text about-text">
                 <h1 className="main-text"># About me</h1>
                 <p>
                     Hey, I am Raviranjan. Basically i'm from Bihar But Currently living in New Delhi.
@@ -33,109 +37,102 @@ export default function Content() {
                     also learnt to how to use 'position' property and CSS 'flexbox'.
                 </p>
             </div>
-            <div class="same-content-text">
+            <div className="same-content-text">
                 <h1 className="main-text"># Skills</h1>
                 <div className="cards">
-                    <div class="card">
-                        <div class="header">Frontend Technology</div>
-                        <div class="body">
-                            <div class="skill">
-                                <div class="skill-name">HTML5</div>
-                                <div class="skill-level">
-                                    <div class="skill-percent" style={{ width: "90%" }}></div>
+                    <div className="card">
+                        <div className="header">Frontend Technology</div>
+                        <div className="body" style={{ color: props.active ? "black" : "black" }}>
+                            <div className="skill">
+                                <div className="skill-name">HTML5</div>
+                                <div className="skill-level">
+                                    <div className="skill-percent" style={{ width: "90%" }}></div>
                                 </div>
-                                <div class="skill-percent-number">90%</div>
+                                <div className="skill-percent-number">90%</div>
                             </div>
-                            <div class="skill">
-                                <div class="skill-name">CSS3</div>
-                                <div class="skill-level">
-                                    <div class="skill-percent" style={{ width: "80%" }}></div>
+                            <div className="skill">
+                                <div className="skill-name">CSS3</div>
+                                <div className="skill-level">
+                                    <div className="skill-percent" style={{ width: "80%" }}></div>
                                 </div>
-                                <div class="skill-percent-number">80%</div>
+                                <div className="skill-percent-number">80%</div>
                             </div>
-                            <div class="skill">
-                                <div class="skill-name">JavaScript</div>
-                                <div class="skill-level">
-                                    <div class="skill-percent" style={{ width: "75%" }}></div>
+                            <div className="skill">
+                                <div className="skill-name">JavaScript</div>
+                                <div className="skill-level">
+                                    <div className="skill-percent" style={{ width: "75%" }}></div>
                                 </div>
-                                <div class="skill-percent-number">75%</div>
+                                <div className="skill-percent-number">75%</div>
                             </div>
-                            <div class="skill">
-                                <div class="skill-name">React js</div>
-                                <div class="skill-level">
-                                    <div class="skill-percent" style={{ width: "50%" }}></div>
+                            <div className="skill">
+                                <div className="skill-name">React js</div>
+                                <div className="skill-level">
+                                    <div className="skill-percent" style={{ width: "50%" }}></div>
                                 </div>
-                                <div class="skill-percent-number">50%</div>
-                            </div>
-                            <div class="skill">
-                                <div class="skill-name">Tailwind CSS</div>
-                                <div class="skill-level">
-                                    <div class="skill-percent" style={{ width: "65%" }}></div>
-                                </div>
-                                <div class="skill-percent-number">65%</div>
+                                <div className="skill-percent-number">50%</div>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="header">Backend Technology</div>
-                        <div class="body">
-                            <div class="skill">
-                                <div class="skill-name">Java</div>
-                                <div class="skill-level">
-                                    <div class="skill-percent" style={{ width: "95%" }}></div>
+                    <div className="card">
+                        <div className="header">Backend Technology</div>
+                        <div className="body" style={{ color: props.active ? "black" : "black" }}>
+                            <div className="skill">
+                                <div className="skill-name">Java</div>
+                                <div className="skill-level">
+                                    <div className="skill-percent" style={{ width: "95%" }}></div>
                                 </div>
-                                <div class="skill-percent-number">95%</div>
+                                <div className="skill-percent-number">95%</div>
                             </div>
-                            <div class="skill">
-                                <div class="skill-name">JavaScript</div>
-                                <div class="skill-level">
-                                    <div class="skill-percent" style={{ width: "80%" }}></div>
+                            <div className="skill">
+                                <div className="skill-name">JavaScript</div>
+                                <div className="skill-level">
+                                    <div className="skill-percent" style={{ width: "80%" }}></div>
                                 </div>
-                                <div class="skill-percent-number">50%</div>
+                                <div className="skill-percent-number">50%</div>
                             </div>
-                            <div class="skill">
-                                <div class="skill-name">C++</div>
-                                <div class="skill-level">
-                                    <div class="skill-percent" style={{ width: "55%" }}></div>
+                            <div className="skill">
+                                <div className="skill-name">C++</div>
+                                <div className="skill-level">
+                                    <div className="skill-percent" style={{ width: "55%" }}></div>
                                 </div>
-                                <div class="skill-percent-number">55%</div>
+                                <div className="skill-percent-number">55%</div>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="header">Database Technology</div>
-                        <div class="body">
-                            <div class="skill">
-                                <div class="skill-name">MongoDB</div>
-                                <div class="skill-level">
-                                    <div class="skill-percent" style={{ width: "65%" }}></div>
+                    <div className="card">
+                        <div className="header">Database Technology</div>
+                        <div className="body" style={{ color: props.active ? "black" : "black" }}>
+                            <div className="skill">
+                                <div className="skill-name">MongoDB</div>
+                                <div className="skill-level">
+                                    <div className="skill-percent" style={{ width: "65%" }}></div>
                                 </div>
-                                <div class="skill-percent-number">65%</div>
+                                <div className="skill-percent-number">65%</div>
                             </div>
-                            <div class="skill">
-                                <div class="skill-name">Oracle SQL</div>
-                                <div class="skill-level">
-                                    <div class="skill-percent" style={{ width: "80%" }}></div>
+                            <div className="skill">
+                                <div className="skill-name">Oracle SQL</div>
+                                <div className="skill-level">
+                                    <div className="skill-percent" style={{ width: "80%" }}></div>
                                 </div>
-                                <div class="skill-percent-number">80%</div>
+                                <div className="skill-percent-number">80%</div>
                             </div>
 
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="same-content-text display-none">
+            <div className="same-content-text display-none">
                 <h1 className="main-text"># Academics Qualfication</h1>
-                <div class="table-acadmics">
+                <div className="table-acadmics"style={{ backgroundColor: props.active ? "white" : "white"}}>
                     <table border={"1px"}>
                         {/* <!-- <caption># Academics Qualfication</caption> --> */}
-                        <thead>
-                            <th>Qualfication</th>
-                            <th className="hide-content">College/School Name</th>
-                            <th>Bord/University</th>
-                            <th>Percentage</th>
-                            <th>Year of Passing</th>
-                        </thead>
+                        <tr className="head">
+                            <td>Qualfication</td>
+                            <td className="hide-content">College/School Name</td>
+                            <td>Bord/University</td>
+                            <td>Percentage</td>
+                            <td>Year of Passing</td>
+                        </tr>
                         <tr>
                             <td>Bca</td>
                             <td className="hide-content">St.Andrews Institute of Technolgy and Management, Gurgaon</td>
@@ -156,36 +153,35 @@ export default function Content() {
                             <td>CBSE</td>
                             <td>73.3%</td>
                             <td>2018</td>
-
                         </tr>
                     </table>
                 </div>
             </div>
-            <div class="same-content-text">
+            <div className="same-content-text">
                 <h1 className="main-text"># Projects</h1>
                 <div className="projects">
                     <div className="project-card">
-                        <div class="child-card card-1">
+                        <div className="child-card card-1">
                             <img src={Img1} alt="github-ajax" />
-                            <div class="text-unpaid">
+                            <div className="text-unpaid">
                                 <a href="https://github-ajax-2023.netlify.app/" target="_blank">View</a>
-                                <a href="https://github-ajax-2023.netlify.app/" target="_blank">Code</a>
+                                <a href="https://github.com/ravi9865/Github-User-Search-API.git" target="_blank">Code</a>
                             </div>
                         </div>
                     </div>
                     <div className="project-card">
-                        <div class="child-card card-2">
+                        <div className="child-card card-2">
                             <img src={Img2} alt="firefox-search-browser" />
-                            <div class="text-unpaid">
+                            <div className="text-unpaid">
                                 <a href="https://firefox-search-browser-2023.netlify.app/" target="_blank">View</a>
-                                <a href="https://firefox-search-browser-2023.netlify.app/" target="_blank">Code</a>
+                                <a href="https://github.com/ravi9865/Firefox-Browser-Clone-with-search-Functionality.git" target="_blank">Code</a>
                             </div>
                         </div>
                     </div>
                     <div className="project-card">
-                        <div class="child-card card-3">
+                        <div className="child-card card-3">
                             <img src={Img3} alt="Spotify" />
-                            <div class="text-unpaid">
+                            <div className="text-unpaid">
                                 <a href="https://spotify-web-2023.netlify.app/" target="_blank">View</a>
                                 <a href="https://spotify-web-2023.netlify.app/" target="_blank">Code</a>
                             </div>
@@ -194,36 +190,36 @@ export default function Content() {
                 </div>
                 <div className="projects">
                     <div className="project-card">
-                        <div class="child-card card-4">
+                        <div className="child-card card-4">
                             <img src={Img4} alt="Dashboard" />
-                            <div class="text-unpaid">
+                            <div className="text-unpaid">
                                 <a href="https://ravi-sharma-dashboard-2023.netlify.app/" target="_blank">View</a>
-                                <a href="https://ravi-sharma-dashboard-2023.netlify.app" target="_blank">Code</a>
+                                <a href="https://github.com/ravi9865/Responsive-Dashboard.git" target="_blank">Code</a>
                             </div>
                         </div>
                     </div>
                     <div className="project-card">
-                        <div class="child-card card-5">
+                        <div className="child-card card-5">
                             <img src={Img5} alt="Shaadi" />
-                            <div class="text-unpaid">
+                            <div className="text-unpaid">
                                 <a href="https://shaadi-home-page-clone-2023.netlify.app/" target="_blank">View</a>
-                                <a href="https://shaadi-home-page-clone-2023.netlify.app/" target="_blank">Code</a>
+                                <a href="https://github.com/ravi9865/shaadi.com-clone-home-page.git" target="_blank">Code</a>
 
                             </div>
                         </div>
                     </div>
                     <div className="project-card">
-                        <div class="child-card card-6">
+                        <div className="child-card card-6">
                             <img src={Img6} alt="wheather-forecast" />
-                            <div class="text-unpaid">
+                            <div className="text-unpaid">
                                 <a href="https://wheather-forecast-app-2022.netlify.app/" target="_blank">View</a>
-                                <a href="https://wheather-forecast-app-2022.netlify.app/" target="_blank">Code</a>
+                                <a href="https://github.com/ravi9865/wheather-forecast-app.git" target="_blank">Code</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="same-content-text about-text">
+            <div className="same-content-text about-text">
                 <h1 className="main-text"># Important Links</h1>
                 <p>
                     Here we have some Important Links of the Repositiory and coding challenges.
@@ -242,27 +238,27 @@ export default function Content() {
 
                 </p>
                 <div className="imp-links">
-                    <div class="link-card lcards-1">
+                    <div className="link-card lcards-1">
                         <img id="github-logo" src={Img7} alt="Github-logo" />
                         <h1>GitHub</h1>
                         <a href="https://github.com/ravi9865" target="_blank">link</a>
                     </div>
-                    <div class="link-card lcards-2">
+                    <div className="link-card lcards-2">
                         <img id="linkedin-logo" src={Img8} alt="LinkedIn" />
                         <h1>LinkedIn</h1>
                         <a href="https://www.linkedin.com/in/imraviranjansharma/" target="_blank">link</a>
                     </div>
-                    <div class="link-card lcards-3">
+                    <div className="link-card lcards-3">
                         <img src={Img9} alt="HackerRank" />
                         <h1>HackerRank</h1>
                         <a href="https://www.hackerrank.com/RAVIRA_209098?hr_r=1" target="_blank">link</a>
                     </div>
-                    <div class="link-card lcards-4">
+                    <div className="link-card lcards-4">
                         <img src={Img10} alt="Devsnest" />
                         <h1>Devsnest</h1>
                         <a href="https://devsnest.in/u/ravira209098" target="_blank">link</a>
                     </div>
-                    {/* <div class="link-card lcards-5">
+                    {/* <div className="link-card lcards-5">
                         <img alt="Coding" />
                         <h1>GitHub</h1>
                         <a href="https://github.com/ravi9865" target="_blank">link</a>
@@ -270,9 +266,9 @@ export default function Content() {
                 </div>
 
             </div>
-            <div class="same-content-text">
+            <div className="same-content-text">
                 <h2 className="main-text"># Interest</h2>
-                <div class="about-Interest">
+                <div className="about-Interest">
                     <ul type="circle">
                         <li>Making Websites</li>
                         <li>Analysis and information gain about Shares</li>
@@ -280,40 +276,42 @@ export default function Content() {
                     </ul>
                 </div>
             </div>
-            <div class="same-content-text">
+            <div className="same-content-text">
                 <h1 className="main-text"># Contact Us</h1>
                 <div className="contact-form">
-                    <form name="contact" action="/contact" method="post" id="form">
-                        <input type="hidden" name="form-name" value="contact"/>
+                {/* onSubmit={handleSubmit} */}
+                    <form name="contact" method="POST" style={{ color: props.active ? "black" : "black" }} id="form" onSubmit={handleSubmit}>
+                        <input type="hidden" name="form-name" value="contact" />
+                        
                         <div className="input-fields">
-                            <label for="name">Name:</label>
+                            <label htmlFor="name">Name:</label>
                             <input type="text" id="name" name="name"/>
                         </div>
                         <div className="input-fields">
-                            <label for="phone1">Phone:</label>
+                            <label htmlFor="phone1">Phone:</label>
                             <input type="phone" name="phone" id="phone1" minLength={10} maxLength={12} />
                         </div>
 
                         <div className="input-fields">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email"/>
+                            <label htmlFor="email">Email:</label>
+                            <input type="email" id="email" name="email" />
                         </div>
 
                         <div className="decs">
-                            <label for="decs">Description: </label>
+                            <label htmlFor="decs">Description: </label>
                             <textarea name="description" id="decs" placeholder="Writte Your Query"></textarea>
                         </div>
 
-                        <div class="contract-btn">
-                            <button id="submit" type="submit">Submit</button>
+                        <div className="contract-btn">
+                            <button id="submit" type="submit" onClick={props.handleResponse}>Submit</button>
                             <button id="reset" type="reset">Reset</button>
                         </div>
                     </form>
                     <div className="contact-img display-none">
-                        <img src={Img14} alt="" />
+                        <img src={Img14} alt="contract-img"/>
                     </div>
                 </div>
-                <div id="contract-response">
+                <div id="contract-response" style={{display: props.Display ? "block" : "none"}}>
                     <div className="ani-circle"></div>
                     <h1>Your Respose will be Submitted...</h1>
                 </div>
