@@ -10,7 +10,7 @@ export default function Navbar(props) {
         <article className="navbar" style={{ backgroundColor: props.active ? "black" : "white", color: props.active ? "white" : "black" }}>
             <img id="profile-photo" src={Img1} alt="profile-pic" />
             <h1>Raviranjan Sharma</h1>
-            <p className="auto-text">I'm a <span className="element"></span></p>
+            {/* <p className="auto-text">I'm a <span className="element"></span></p> */}
             <p>
                 I am looking for a position. where my educational and practical experience
                 can be utilized. Seeking opportunities for professional growth and increasing

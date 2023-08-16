@@ -280,8 +280,9 @@ export default function Content(props) {
                 <h1 className="main-text"># Contact Us</h1>
                 <div className="contact-form">
                 {/* onSubmit={handleSubmit} */}
-                    <form name="contact" method="POST" style={{ color: props.active ? "black" : "black" }} id="form" onSubmit={handleSubmit}>
-                        <input type="hidden" name="form-name" value="contact" />
+                {/* method="POST" */}
+                    <form name="contact" style={{ color: props.active ? "black" : "black" }} id="form" onSubmit={handleSubmit}>
+                        {/* <input type="hidden" name="form-name" value="contact" /> */}
                         
                         <div className="input-fields">
                             <label htmlFor="name">Name:</label>
