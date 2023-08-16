@@ -8,9 +8,9 @@ export default function Navbar(props) {
     
     return (
         <article className="navbar" style={{ backgroundColor: props.active ? "black" : "white", color: props.active ? "white" : "black" }}>
-            <img id="profile-photo" src={Img1} alt="profile-photo" />
+            <img id="profile-photo" src={Img1} alt="profile-pic" />
             <h1>Raviranjan Sharma</h1>
-            <p class="auto-text">I'm a <span class="element"></span></p>
+            <p className="auto-text">I'm a <span className="element"></span></p>
             <p>
                 I am looking for a position. where my educational and practical experience
                 can be utilized. Seeking opportunities for professional growth and increasing
@@ -19,13 +19,13 @@ export default function Navbar(props) {
             <h4>turning ideas into real life product is my callings.......</h4>
 
             <h3>Download</h3>
-            <a href={Resume} download><button className="resume-btn">Resume</button></a>
+            <a href={Resume} download><button className="resume-btn" rel="noopener noreferrer">Resume</button></a>
 
             <h3>Connect Us</h3>
             <div className="connect-us">
-                <a href="tel:7703833281" target="_blank"><img src={Img2} id="phone" alt="phone-logo"></img></a>
-                <a href="https://wa.me/917703833281" target="_blank" className="whatupp"><img src={Img3} alt="whatup-logo"></img></a>
-                <a href="mailto:RAVIRA_209098@SAITM.ORG" target="_blank" className="gmail"><img id="gmail" src={Img4} alt="gmail-logo"></img></a>
+                <a href="tel:7703833281" target="_blank" rel="noopener noreferrer"><img src={Img2} id="phone" alt="phone-logo" ></img></a>
+                <a href="https://wa.me/917703833281" target="_blank" className="whatupp" rel="noopener noreferrer"><img src={Img3} alt="whatup-logo"></img></a>
+                <a href="mailto:RAVIRA_209098@SAITM.ORG" target="_blank" className="gmail" rel="noopener noreferrer"><img id="gmail" src={Img4} alt="gmail-logo"></img></a>
             </div>
         </article>
     )
