@@ -166,7 +166,7 @@ export default function Content(props) {
                                 <img src={Img1} alt="github-ajax" />
                             </div>
                             <div className="anchor-child">
-                                <a href="https://github-ajax-2023.netlify.app/" className="view-child" target="_blank" rel="noopener noreferrer">View</a>
+                                <a href="https://github-user-search-api-2023.netlify.app/" className="view-child" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://github.com/ravi9865/Github-User-Search-API.git" className="code-child" target="_blank" rel="noopener noreferrer">Code</a>
                             </div>
                         </div>
