@@ -1,8 +1,4 @@
-import React, { useState } from "react";
-import TopNav from "./Compotents/TopNav";
-import Navbar from "./Compotents/Navbar";
-import Content from "./Compotents/Content";
-import Footer from "./Compotents/Footer";
+import React from "react";
 import PropsChild from "./Compotents/PropsChild";
 import "./Css/index.css";
 import "./Css/tablet.css";

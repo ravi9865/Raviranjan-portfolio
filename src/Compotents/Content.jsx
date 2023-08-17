@@ -11,9 +11,9 @@ import Img9 from "../Assets/Img/link_page/HackerRank_logo.png";
 import Img10 from "../Assets/Img/link_page/Devsnest_logo.png";
 import Img14 from "../Assets/Img/contactus-icon.png";
 export default function Content(props) {
-    const handleSubmit = (e)=>{ 
+    const handleSubmit = (e) => {
         e.preventDefault();
-        e.target.value="";
+        e.target.value = "";
     }
     return (
         <article className="content" style={{ backgroundColor: props.active ? "black" : "white", color: props.active ? "white" : "black" }}>
@@ -123,7 +123,7 @@ export default function Content(props) {
             </div>
             <div className="same-content-text display-none">
                 <h1 className="main-text"># Academics Qualfication</h1>
-                <div className="table-acadmics"style={{ backgroundColor: props.active ? "white" : "white"}}>
+                <div className="table-acadmics" style={{ backgroundColor: props.active ? "white" : "white" }}>
                     <table border={"1px"}>
                         {/* <!-- <caption># Academics Qualfication</caption> --> */}
                         <tr className="head">
@@ -162,7 +162,9 @@ export default function Content(props) {
                 <div className="projects">
                     <div className="project-card">
                         <div className="child-card card-1">
-                            <img src={Img1} alt="github-ajax" />
+                            <div>
+                                <img src={Img1} alt="github-ajax" />
+                            </div>
                             <div className="text-unpaid">
                                 <a href="https://github-ajax-2023.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://github.com/ravi9865/Github-User-Search-API.git" target="_blank" rel="noopener noreferrer">Code</a>
@@ -171,7 +173,9 @@ export default function Content(props) {
                     </div>
                     <div className="project-card">
                         <div className="child-card card-2">
-                            <img src={Img2} alt="firefox-search-browser" />
+                            <div>
+                                <img src={Img2} alt="firefox-search-browser" />
+                            </div>
                             <div className="text-unpaid">
                                 <a href="https://firefox-search-browser-2023.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://github.com/ravi9865/Firefox-Browser-Clone-with-search-Functionality.git" target="_blank" rel="noopener noreferrer">Code</a>
@@ -180,7 +184,9 @@ export default function Content(props) {
                     </div>
                     <div className="project-card">
                         <div className="child-card card-3">
-                            <img src={Img3} alt="Spotify" />
+                            <div>
+                                <img src={Img3} alt="Spotify" />
+                            </div>
                             <div className="text-unpaid">
                                 <a href="https://spotify-web-2023.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://spotify-web-2023.netlify.app/" target="_blank" rel="noopener noreferrer">Code</a>
@@ -191,7 +197,9 @@ export default function Content(props) {
                 <div className="projects">
                     <div className="project-card">
                         <div className="child-card card-4">
-                            <img src={Img4} alt="Dashboard" />
+                            <div>
+                                <img src={Img4} alt="Dashboard" />
+                            </div>
                             <div className="text-unpaid">
                                 <a href="https://ravi-sharma-dashboard-2023.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://github.com/ravi9865/Responsive-Dashboard.git" target="_blank" rel="noopener noreferrer">Code</a>
@@ -200,7 +208,9 @@ export default function Content(props) {
                     </div>
                     <div className="project-card">
                         <div className="child-card card-5">
-                            <img src={Img5} alt="Shaadi" />
+                            <div>
+                                <img src={Img5} alt="Shaadi" />
+                            </div>
                             <div className="text-unpaid">
                                 <a href="https://shaadi-home-page-clone-2023.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://github.com/ravi9865/shaadi.com-clone-home-page.git" target="_blank" rel="noopener noreferrer">Code</a>
@@ -210,7 +220,9 @@ export default function Content(props) {
                     </div>
                     <div className="project-card">
                         <div className="child-card card-6">
-                            <img src={Img6} alt="wheather-forecast" />
+                            <div>
+                                <img src={Img6} alt="wheather-forecast" />
+                            </div>
                             <div className="text-unpaid">
                                 <a href="https://wheather-forecast-app-2022.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://github.com/ravi9865/wheather-forecast-app.git" target="_blank" rel="noopener noreferrer">Code</a>
@@ -279,14 +291,14 @@ export default function Content(props) {
             <div className="same-content-text">
                 <h1 className="main-text"># Contact Us</h1>
                 <div className="contact-form">
-                {/* onSubmit={handleSubmit} */}
-                {/* method="POST" */}
+                    {/* onSubmit={handleSubmit} */}
+                    {/* method="POST" */}
                     <form name="contact" style={{ color: props.active ? "black" : "black" }} id="form" onSubmit={handleSubmit}>
                         {/* <input type="hidden" name="form-name" value="contact" /> */}
-                        
+
                         <div className="input-fields">
                             <label htmlFor="name">Name:</label>
-                            <input type="text" id="name" name="name"/>
+                            <input type="text" id="name" name="name" />
                         </div>
                         <div className="input-fields">
                             <label htmlFor="phone1">Phone:</label>
@@ -309,10 +321,10 @@ export default function Content(props) {
                         </div>
                     </form>
                     <div className="contact-img display-none">
-                        <img src={Img14} alt="contract-img"/>
+                        <img src={Img14} alt="contract-img" />
                     </div>
                 </div>
-                <div id="contract-response" style={{display: props.Display ? "block" : "none"}}>
+                <div id="contract-response" style={{ display: props.Display ? "block" : "none" }}>
                     <div className="ani-circle"></div>
                     <h1>Your Respose will be Submitted...</h1>
                 </div>
