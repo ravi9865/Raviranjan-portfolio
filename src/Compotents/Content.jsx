@@ -162,71 +162,70 @@ export default function Content(props) {
                 <div className="projects">
                     <div className="project-card">
                         <div className="child-card card-1">
-                            <div>
+                            {/* <div> */}
                                 <img src={Img1} alt="github-ajax" />
-                            </div>
-                            <div className="text-unpaid">
+                            {/* </div> */}
+                            {/* <div className="text-unpaid"> */}
                                 <a href="https://github-ajax-2023.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://github.com/ravi9865/Github-User-Search-API.git" target="_blank" rel="noopener noreferrer">Code</a>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                     <div className="project-card">
                         <div className="child-card card-2">
-                            <div>
+                            {/* <div> */}
                                 <img src={Img2} alt="firefox-search-browser" />
-                            </div>
-                            <div className="text-unpaid">
+                            {/* </div> */}
+                            {/* <div className="text-unpaid"> */}
                                 <a href="https://firefox-search-browser-2023.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://github.com/ravi9865/Firefox-Browser-Clone-with-search-Functionality.git" target="_blank" rel="noopener noreferrer">Code</a>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                     <div className="project-card">
                         <div className="child-card card-3">
-                            <div>
+                            {/* <div> */}
                                 <img src={Img3} alt="Spotify" />
-                            </div>
-                            <div className="text-unpaid">
+                            {/* </div> */}
+                            {/* <div className="text-unpaid"> */}
                                 <a href="https://spotify-web-2023.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://spotify-web-2023.netlify.app/" target="_blank" rel="noopener noreferrer">Code</a>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                 </div>
                 <div className="projects">
                     <div className="project-card">
                         <div className="child-card card-4">
-                            <div>
+                            {/* <div> */}
                                 <img src={Img4} alt="Dashboard" />
-                            </div>
-                            <div className="text-unpaid">
+                            {/* </div> */}
+                            {/* <div className="text-unpaid"> */}
                                 <a href="https://ravi-sharma-dashboard-2023.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://github.com/ravi9865/Responsive-Dashboard.git" target="_blank" rel="noopener noreferrer">Code</a>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                     <div className="project-card">
                         <div className="child-card card-5">
-                            <div>
+                            {/* <div> */}
                                 <img src={Img5} alt="Shaadi" />
-                            </div>
-                            <div className="text-unpaid">
+                            {/* </div> */}
+                            {/* <div className="text-unpaid"> */}
                                 <a href="https://shaadi-home-page-clone-2023.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://github.com/ravi9865/shaadi.com-clone-home-page.git" target="_blank" rel="noopener noreferrer">Code</a>
-
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                     <div className="project-card">
                         <div className="child-card card-6">
-                            <div>
+                            {/* <div> */}
                                 <img src={Img6} alt="wheather-forecast" />
-                            </div>
-                            <div className="text-unpaid">
+                            {/* </div> */}
+                            {/* <div className="text-unpaid"> */}
                                 <a href="https://wheather-forecast-app-2022.netlify.app/" target="_blank" rel="noopener noreferrer">View</a>
                                 <a href="https://github.com/ravi9865/wheather-forecast-app.git" target="_blank" rel="noopener noreferrer">Code</a>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                 </div>
