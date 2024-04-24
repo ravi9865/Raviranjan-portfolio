@@ -41,11 +41,11 @@ export default function Content(props) {
           showConfirmButton: false,
           timer: 1500,
         });
-        setName(name);
-        setPhone(phone);
-        setEmail(email);
-        setSubject(subject);
-        setDescription(description);
+        setName("");
+        setPhone("");
+        setEmail("");
+        setSubject("");
+        setDescription("");
       } else {
         Swal.fire({
           position: "center",
@@ -59,6 +59,14 @@ export default function Content(props) {
       alert("Internal Server Error!");
       console.error("Internal Server Error!", error);
     }
+  };
+  const handleRestInputF = async (e) => {
+    e.preventDefault();
+    setName("");
+    setPhone("");
+    setEmail("");
+    setSubject("");
+    setDescription("");
   };
   return (
     <article
@@ -91,8 +99,7 @@ export default function Content(props) {
       <div className="same-content-text">
         <h1 className="main-text"># Skills</h1>
         <div className="cards">
-          <div className="card"
-          >
+          <div className="card">
             <div className="header">Frontend Technology</div>
             <div
               className="body"
@@ -128,8 +135,7 @@ export default function Content(props) {
               </div>
             </div>
           </div>
-          <div className="card"
-          >
+          <div className="card">
             <div className="header">Backend Technology</div>
             <div
               className="body"
@@ -158,8 +164,7 @@ export default function Content(props) {
               </div>
             </div>
           </div>
-          <div className="card"
-          >
+          <div className="card">
             <div className="header">Database Technology</div>
             <div
               className="body"
@@ -615,7 +620,7 @@ export default function Content(props) {
               <button id="submit" type="submit">
                 Submit
               </button>
-              <button id="reset" type="reset">
+              <button id="reset" type="reset" onClick={handleRestInputF}>
                 Reset
               </button>
             </div>
