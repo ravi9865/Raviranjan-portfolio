@@ -60,7 +60,7 @@ export default function Content(props) {
       console.error("Internal Server Error!", error);
     }
   };
-  const handleRestInputF = async (e) => {
+  const handleRestInputF = (e) => {
     e.preventDefault();
     setName("");
     setPhone("");
@@ -620,7 +620,7 @@ export default function Content(props) {
               <button id="submit" type="submit">
                 Submit
               </button>
-              <button id="reset" type="reset" onClick={handleRestInputF}>
+              <button id="reset" type="button" onClick={handleRestInputF}>
                 Reset
               </button>
             </div>
